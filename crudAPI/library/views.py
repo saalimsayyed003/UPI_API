@@ -14,3 +14,6 @@ class PaymentDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Payment
     serializer_class = PaymentSerializer
 
+
+def index(request):
+    return render(request,'index.html')
